@@ -8,6 +8,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -21,10 +23,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.list {
+  list-style: none;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  width: 1440px;
 }
 
 .App {
@@ -32,4 +52,13 @@ img {
   grid-template-columns: 1fr;
   grid-gap: 16px;
   padding-bottom: 24px;
+}
+
+.navLink {
+  font-size: inherit;
+  color: currentColor;
+}
+
+.navLinkActive {
+  color: palevioletred;
 }
